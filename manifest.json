@@ -1,0 +1,24 @@
+{
+    "name": "The Verge - IsItAThing",
+    "version": "1.1",
+    "manifest_version": 2,
+    "description": "I have no idea if that's a sex thing",
+    "homepage_url": "http://twitter.com/mehedih_",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "default_locale": "en",
+    "permissions": [
+        "http://www.theverge.com/"
+    ],
+    "permissions": [
+        "http://www.theverge.com/",
+        "cookies"
+    ],
+    "content_scripts": [{
+        "js": ["jquery.js", "filter.js"],
+        "matches": ["*://www.theverge.com/*"]
+    }]
+}
