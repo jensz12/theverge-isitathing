@@ -11,13 +11,6 @@
         "128": "icons/icon128.png"
     },
     "default_locale": "en",
-    "permissions": [
-        "http://www.theverge.com/"
-    ],
-    "permissions": [
-        "http://www.theverge.com/",
-        "cookies"
-    ],
     "content_scripts": [{
         "js": ["jquery.js", "filter.js"],
         "matches": ["*://www.theverge.com/*"]
